@@ -1,0 +1,78 @@
+.library{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20rem;
+    height: 100%;
+    z-index: 10;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    transform: translate(-100%);
+    transition:all 0.5s ease;
+    opacity: 0;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    h2{
+        padding: 2rem;
+        font-weight:bolder
+    }
+}
+.library-song{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 1rem 1rem;
+    img{
+        width: 35%;
+        margin: 1rem;
+    }
+    &:hover{
+        background: rgb(248, 247, 228);
+    }
+}
+.song-desc{
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 1rem;
+    h3{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size:medium;
+        margin-bottom: 0.5rem;
+        font-weight:500;
+    }
+    h4{
+        font-weight:300;
+        font-size: small;
+    }
+   
+}
+
+*{
+    scrollbar-width: thin;
+    scrollbar-color:rgb(107, 107, 107)
+}
+*::-webkit-scrollbar{
+    width: 5px;
+}
+*::-webkit-scrollbar-track{
+    background: transparent;
+}
+*::-webkit-scrollbar-thumb{
+    background-color: rgb(214, 214, 213);
+    border-radius: 20px;
+}
+
+.selected{
+    background-color: rgb(243, 238, 196);
+}
+
+.library-on{
+    transform: translateX(0);
+    opacity: 1;
+}
+@media screen and (max-width:768px){
+    .library{
+            width: 250px;
+    }
+}

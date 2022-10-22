@@ -1,0 +1,37 @@
+nav{
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+   color: black;
+    justify-content: space-evenly;
+    button{
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight:100;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    background: transparent;
+    cursor: pointer;
+    }
+    button:hover{
+        background: rgb(61, 45, 15);
+        color: white;
+    }
+    .music-icon{
+        font-size:larger;
+        margin-left: 0.2rem;
+    }
+    h1{
+        font-weight: 100;
+    }
+}
+@media screen and (max-width:768px){
+    nav{
+        button{
+            z-index: 10;
+        }
+    }
+}
